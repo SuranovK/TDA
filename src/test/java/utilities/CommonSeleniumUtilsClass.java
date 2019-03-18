@@ -22,19 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.ConfigurationReader;
 
 public class CommonSeleniumUtilsClass extends Driver{
-	 public void switchToWindowByTitle(String title) {
-	    	
-	        Set<String> windows = driver.getWindowHandles();
-	        System.out.println("Amount of windows that are currently present :: " + windows.size());
-	        for (String window : windows) {
-	            driver.switchTo().window(window);
-	            if (driver.getTitle().startsWith(title) || driver.getTitle().equalsIgnoreCase(title)) {
-	                break;
-	            } else {
-	                continue;
-	            }
-	        }
-	    }
+	 
 	    public void clickWithJS(WebElement elementtoclick) {
 	        WebDriverWait wait = new WebDriverWait(driver, Long.parseLong(ConfigurationReader.getProperty("seleniumtimeout")));
 	      //  wait.until(ExpectedConditions.elementToBeClickable(elementtoclick));
@@ -46,12 +34,6 @@ public class CommonSeleniumUtilsClass extends Driver{
 
 	    	//github.com/KSuranov
 	    	
-	          }
-	    public void waitForVissibilityOfElement(WebElement element) {
-	    	
-
-	    	//github.com/KSuranov
-	        
 	    }
 	    public void waitForStaleElement(WebElement element) {
 	        int i = 0;
