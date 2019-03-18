@@ -114,19 +114,7 @@ public class CommonSeleniumUtilsClass extends Driver{
 	        }
 	        return false;
 	    }
-	    public static void takeSnapShot() {
-	        try {
-	            TakesScreenshot scrShot = ((TakesScreenshot) driver);
-	            File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-	            String path = System.getProperty("user.dir") + "\\screenshots.jpg";
-	            System.out.println(path);
-	            File DestFile = new File(path);
-	            FileUtils.copyFile(SrcFile, DestFile);
-	        } catch (Exception e) {
-	            System.out.println(e.getMessage());
-	        }
-	    }
-	}
-
+	    
+}
 
 
