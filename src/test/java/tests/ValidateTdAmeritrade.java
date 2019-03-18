@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import utilities.TDBrokenLinksUtil;
-public class ValidateTdAmeritrade extends TestBase{
+public class ValidateAllLinksTdAmeritrade extends TestBase{
 	
 		@Test
 		public void validateLinks() {
