@@ -1,5 +1,5 @@
 package pages;
 
-public class ProductsPage {
+public class ProductsPage extends TestBase{
 
 }
