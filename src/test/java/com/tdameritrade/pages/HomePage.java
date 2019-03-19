@@ -1,4 +1,4 @@
-package pages;
+package com.tdameritrade.pages;
 
 import java.security.Key;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import tests.TestBase;
+import com.tdameritrade.tests.TestBase;
 
 
 public class HomePage extends TestBase{
@@ -31,8 +31,12 @@ public class HomePage extends TestBase{
 	@FindBy(xpath = "//input[@name='iwPreActions']")
 	public WebElement searchBox;
 	
-	@FindBy(className="main-header-search-submit")
+	@FindBy(xpath="//*[@id=\"search\"]/button")
 	public WebElement searchButton;
+	
+	@FindBy(xpath="//*[@id=\"1461360467286\"]/div/nav/h1")
+	public WebElement searchResult;
+
 
 	
 	
@@ -43,9 +47,10 @@ public class HomePage extends TestBase{
 
 }
 	
-	public void searchContext(String str) {
+	public void searchBoxFunction(String str) {
 		searchBox.sendKeys(str);
-		searchBox.sendKeys(Keys.ENTER);
+		searchButton.click();
+		//searchBox.sendKeys(Keys.ENTER);
 		
 		
 	}

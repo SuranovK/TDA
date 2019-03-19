@@ -1,7 +1,5 @@
 package utilities;
 
-import static org.testng.Assert.assertEquals;
-
 import java.net.HttpURLConnection;
 import java.net.URL;
 

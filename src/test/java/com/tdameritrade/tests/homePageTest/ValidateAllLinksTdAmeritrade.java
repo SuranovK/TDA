@@ -1,4 +1,4 @@
-package tests;
+package com.tdameritrade.tests.homePageTest;
 
 
 import java.util.List;
@@ -7,7 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.tdameritrade.tests.TestBase;
+
 import utilities.TDBrokenLinksUtil;
+
 public class ValidateAllLinksTdAmeritrade extends TestBase{
 	
 		@Test
