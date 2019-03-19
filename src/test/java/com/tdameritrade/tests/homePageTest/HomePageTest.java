@@ -8,7 +8,7 @@ import com.tdameritrade.tests.TestBase;
 
 public class HomePageTest extends TestBase{
 	
-	@Test(groups= {"smoke"}, priority = 1)
+	@Test
 	public void validatingHomePage() {
 	String actualTitle=driver.getTitle();
 	System.out.println(actualTitle);
