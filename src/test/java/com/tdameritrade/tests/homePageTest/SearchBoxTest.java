@@ -15,7 +15,7 @@ import utilities.ConfigurationReader;
 
 public class SearchBoxTest extends TestBase{
 	
-	//@Test 
+	@Test 
 	public void validateSearchBox() {
 		
 	String searchText = ConfigurationReader.getProperty("searchtext");	
