@@ -9,7 +9,7 @@ import utilities.ConfigurationReader;
 
 public class LoginFunctionalityTest extends TestBase{
 	
-	@Test(groups= {"smoke"}, priority = 2)
+	@Test
 	public void loginWithValidCredentials() {
 		String username = ConfigurationReader.getProperty("validusername");
 		String password = ConfigurationReader.getProperty("validpassword");
@@ -21,7 +21,7 @@ public class LoginFunctionalityTest extends TestBase{
 	}
 
 
-	@Test(groups= {"security"}, priority = 1)
+	@Test
 	public void loginWithInvalidCredentials() {
 		String username = ConfigurationReader.getProperty("invalidusername");
 		String password = ConfigurationReader.getProperty("invalidpassword");
@@ -33,7 +33,7 @@ public class LoginFunctionalityTest extends TestBase{
 	}
 
 
-	@Test(groups= {"security"}, priority = 2)
+	@Test
 	public void loginWithEmptyData() {
 		String username = ConfigurationReader.getProperty("emptyusername");
 		String password = ConfigurationReader.getProperty("emptypassword");
